@@ -7,5 +7,15 @@
 
 <p>
   <strong>id:</strong>
-  <%= @country.country_id %>
+  <%= @country.id %>
+</p>
+
+<p>
+	<!-- id= @country.kitchen_id -->
+  <strong>kitchen_id:</strong>
+    <%= @country.kitchen_id %>
+  
+  <% kitchen = Kitchen.find(  @country.kitchen_id) %>
+  <%= kitchen.kitchen_name %>
+
 </p>
