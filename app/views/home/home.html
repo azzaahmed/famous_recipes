@@ -20,11 +20,14 @@
 					<a href="index.html"><img src="assets/food.jpg" alt="Logo"/></a>
 				</div>
 				<div>
-					<div>
-						<a href="signup.html">My Account</a>
-						<a href="index.html">Help</a>
-						<a href="signin.html" class="last">Sign in</a>
-					</div>
+					<ul class="right">
+  <%if signed_in?%>
+    <li><%=link_to current_user.email, edit_user_registration_path%></li>
+    <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
+  <%else%>
+    <li><%=link_to "Register", new_user_registration_path%></li>
+    <li><%=link_to "Login", new_user_session_path%></li>
+  <%end%>
 					<form action="#">
 						<input type="text" id="search" maxlength="30" />
 						<input type="submit" value="" id="searchbtn" />
