@@ -11,11 +11,14 @@
 </p>
 
 <p>
-	<!-- id= @country.kitchen_id -->
+
   <strong>kitchen_id:</strong>
     <%= @country.kitchen_id %>
-  
+</br>
+  <strong>kitchen_name:</strong>
   <% kitchen = Kitchen.find(  @country.kitchen_id) %>
   <%= kitchen.kitchen_name %>
 
 </p>
+
+   <%= link_to "show_reecipe", {:controller => 'countries', :action => 'get_recipes'} %> 

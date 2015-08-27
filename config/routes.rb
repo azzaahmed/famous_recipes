@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :countries
   resources :kitchens
 root 'home#home'
-
+ get 'countries/:id/get_recipes'  => 'countries#get_recipes'
 #match ':controller(/:action(/:id))', :via => get
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

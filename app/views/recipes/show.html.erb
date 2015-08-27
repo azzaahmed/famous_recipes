@@ -1,11 +1,32 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @crecipe.country_name %>
+  <strong>recipe_id:</strong>
+  <%= @recipe.country_id %>
+</p>
 </p>
 
+  <strong>country_name:</strong>
+  <% country = Country.find(  @recipe.country_id) %>
+  <%= country.country_name %>
+
+</p>
+
+</p>
+
+  <strong>recipe_name:</strong>
+  <%= @recipe.recipe_name %>
+
+</p>
 <p>
   <strong>content:</strong>
   <%= @recipe.recipe_content %>
+
+</p>
+
+
+<p>
+  <strong>calories:</strong>
+  <%= @recipe.calories %>
+
 </p>
