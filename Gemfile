@@ -44,3 +44,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'psych', '~> 2.0.14'
+gem 'seed_dump', '~> 3.2.2'
