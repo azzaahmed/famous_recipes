@@ -63,4 +63,5 @@ root 'home#home'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+    match ':controller(/:action(/:id))', :via => :get
 end
