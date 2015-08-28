@@ -1,7 +1,4 @@
-User.create!([
-  {email: "a@aa.com", encrypted_password: "$2a$10$ZA5C.sUUTbKoskdX5JeYMuF0bfK06V9pVSEBpqhIuPtL01uF.RMzS", reset_password_token: "0a31f9ec1b369033efc6b735be75b80c9a07a8f7b8f9b086fe88385089994677", reset_password_sent_at: "2015-08-27 16:19:37", remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2015-08-27 16:16:47", last_sign_in_at: "2015-08-27 16:16:20", current_sign_in_ip: "::1", last_sign_in_ip: "::1"},
-  {email: "a@yahoo.com", encrypted_password: "$2a$10$Vh..XrG/5V8oelSybZjvQuYtwiqN.xz2m5YHsdfHvXSZ.ORN5K1C.", reset_password_token: "fe7a25b4a9f079b94406c51c747885bcef808c73a31f7781f545a93f8090ccff", reset_password_sent_at: "2015-08-27 16:21:12", remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-08-27 16:20:48", last_sign_in_at: "2015-08-27 16:20:48", current_sign_in_ip: "::1", last_sign_in_ip: "::1"}
-])
+
 Country.create!([
   {country_name: "kenya", kitchen_id: 2, visible: false},
   {country_name: "nigeria", kitchen_id: 2, visible: false},
