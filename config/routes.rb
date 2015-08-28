@@ -13,8 +13,9 @@ end
   resources :recipes
   resources :countries
   resources :kitchens
-root 'home#home'
+root 'kitchens#index'
  get 'countries/:id/get_recipes'  => 'countries#get_recipes'
+#  get 'kitchens/:id/get_countries'  => 'kitchens#get_countries'
 #match ':controller(/:action(/:id))', :via => get
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
