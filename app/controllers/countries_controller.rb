@@ -10,13 +10,13 @@ class CountriesController < ApplicationController
   # GET /countries/1
   # GET /countries/1.json
   def show
-    
+    @recipess= Recipe.where(:country_id => params[:id])
   end
 
-def get_recipes
+# def get_recipes
 
- @recipess= Recipe.where(:country_id => params[:id])
-  end
+#  @recipess= Recipe.where(:country_id => params[:id])
+#   end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_country

@@ -6,7 +6,7 @@ body {
 	font-family: Verdana;
 	font-size: 12px;
 	margin: 0;
-	min-width: 1400px;
+	min-width: 1000px;
 	padding: 0;
 	width: 100%;
 }
@@ -29,7 +29,7 @@ p a {
 
 #header div {
 	margin: 0 auto;
-	width: 1400px;
+	width: 100%x;
 }
 
 #header div div {
@@ -896,7 +896,7 @@ p a {
 
 #footer div.home {
 	background: url(../assets/bg-footer.gif) repeat-x top left;
-	height: 336px;
+	height: 200px;
     padding: 0;
     width: auto;
 }
