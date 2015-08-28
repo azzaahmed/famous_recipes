@@ -28,10 +28,11 @@
     <li><%=link_to "Register", new_user_registration_path%></li>
     <li><%=link_to "Login", new_user_session_path%></li>
   <%end%>
-					<form action="#">
-						<input type="text" id="search" maxlength="30" />
-						<input type="submit" value="" id="searchbtn" />
-					</form>
+					<%= form_tag recipes_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search" %>
+    
+<% end %>
 				</div>
 			</div>
 			<ul>
