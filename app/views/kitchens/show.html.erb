@@ -36,15 +36,20 @@
       <img src="assets/food.jpg" alt="Logo"/>
         </div>
         <div>
-          <div>
-            <a href="signup.html">My Account</a>
-            <a href="index.html">Help</a>
-            <a href="signin.html" class="last">Sign in</a>
-          </div>
-          <form action="#">
-            <input type="text" id="search" maxlength="30" />
-            <input type="submit" value="" id="searchbtn" />
-          </form>
+          <ul class="right">
+  <%if signed_in?%>
+    <li><%=link_to current_user.email, edit_user_registration_path%></li>
+    <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
+  <%else%>
+    <li><%=link_to "Register", new_user_registration_path%></li>
+    <li><%=link_to "Login", new_user_session_path%></li>
+  <%end%>
+</ul>
+          <%= form_tag recipes_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search" %>
+    
+ <% end %>
         </div>
       </div>
       <ul>

@@ -12,6 +12,7 @@ class KitchensController < ApplicationController
   def show
   end
 
+
   def get_countries
 
   @countryy= Country.where(:kitchen_id  => params[:id])
