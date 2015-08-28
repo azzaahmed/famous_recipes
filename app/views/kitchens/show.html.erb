@@ -9,3 +9,103 @@
   <strong>id:</strong>
   <%= @kitchen.id %>
 </p>
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Famous recipes</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css" />
+  <![endif]-->
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css" />
+  <![endif]-->
+</head>
+<body >
+
+
+  <div id="header">
+    <div>
+      <div>
+        <div id="logo">
+      <img src="assets/food.jpg" alt="Logo"/>
+        </div>
+        <div>
+          <div>
+            <a href="signup.html">My Account</a>
+            <a href="index.html">Help</a>
+            <a href="signin.html" class="last">Sign in</a>
+          </div>
+          <form action="#">
+            <input type="text" id="search" maxlength="30" />
+            <input type="submit" value="" id="searchbtn" />
+          </form>
+        </div>
+      </div>
+      <ul>
+        <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
+       
+  	<% get_countries.each do |country| %>
+        <li> <%= link_to country.country_name, country %> </li>
+    <% end %>
+   </ul>
+     </div>
+      
+ 
+  </div>
+  <div id="content">
+    <div class="home">
+      <div class="aside">
+        <h1>Welcome to our site</h1>
+        <p>paragraph1.</p> 
+        
+        <p>paragraph2. <a href="index.html" class="readmore">read more</a></p>
+      </div>
+      <div class="section">
+        <div>
+          <h2>The food story</h2>
+          <p>paragraaaaph.</p>
+        </div>
+        <ul>
+          <li class="first">
+           <img src="assets/2.jpg" alt="Image" />
+          </li>
+          <li>
+            <img src="assets/burgercake.jpg" alt="Image" />
+          </li>
+          <li>
+            <img src="assets/4.jpg" alt="Image" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="home">
+      <div>
+        <div class="aside">
+          <div class="signup">
+            
+          </div>
+          <div class="connect">
+            <span>Follow Us</span>
+            <ul>
+              <li><a href="http://facebook.com/freewebsitetemplates" target="_blank" class="facebook">Facebook</a></li>
+              <li><a href="http://twitter.com/fwtemplates" target="_blank" class="twitter">Twitter</a></li>
+              <li><a href="#" class="subscribe">Subscribe</a></li>
+              <li><a href="http://www.flickr.com/freewebsitetemplates/" target="_blank" class="flicker">Flicker</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
