@@ -1,4 +1,29 @@
-
+User.create!([
+  {email: "a@aa.com", encrypted_password: "$2a$10$ZA5C.sUUTbKoskdX5JeYMuF0bfK06V9pVSEBpqhIuPtL01uF.RMzS", reset_password_token: "0a31f9ec1b369033efc6b735be75b80c9a07a8f7b8f9b086fe88385089994677", reset_password_sent_at: "2015-08-27 16:19:37", remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2015-08-27 16:16:47", last_sign_in_at: "2015-08-27 16:16:20", current_sign_in_ip: "::1", last_sign_in_ip: "::1"},
+  {email: "a@yahoo.com", encrypted_password: "$2a$10$Vh..XrG/5V8oelSybZjvQuYtwiqN.xz2m5YHsdfHvXSZ.ORN5K1C.", reset_password_token: "fe7a25b4a9f079b94406c51c747885bcef808c73a31f7781f545a93f8090ccff", reset_password_sent_at: "2015-08-27 16:21:12", remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-08-27 16:20:48", last_sign_in_at: "2015-08-27 16:20:48", current_sign_in_ip: "::1", last_sign_in_ip: "::1"},
+  {email: "aa@h.com", encrypted_password: "$2a$10$k2phX7Fe8LrpqqvG80M7Ge9xfxx04xEFyrriP/pk8Cly3Fvuuv4la", reset_password_token: "bbd63c6b2e5761dbe375f02b221a69d1edfd7ee3bf45e722bc57d4fa2b88377f", reset_password_sent_at: "2015-08-27 19:21:59", remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-08-27 19:21:11", last_sign_in_at: "2015-08-27 19:21:11", current_sign_in_ip: "::1", last_sign_in_ip: "::1"},
+  {email: "a@az.com", encrypted_password: "$2a$10$4qimNw2Z./xd6BcTiD2ZmuL3W.BFjMIK3ENDnjNJ6BI8oKejdHG/2", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-08-29 00:45:49", last_sign_in_at: "2015-08-29 00:45:49", current_sign_in_ip: "::1", last_sign_in_ip: "::1"},
+  {email: "sdfuhl@yahoo.com", encrypted_password: "$2a$10$/swdyB/jfPnneAkW2DAgYOQ6m7n9fQQngclUT5uE9/8/oqIAU1A9G", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2015-08-29 14:04:56", last_sign_in_at: "2015-08-29 14:03:50", current_sign_in_ip: "::1", last_sign_in_ip: "::1"}
+])
+Comment.create!([
+  {body: "aaaaaaaa", recipe_id: 10},
+  {body: "aaaa", recipe_id: 11},
+  {body: "aaaa", recipe_id: 11},
+  {body: "aaw", recipe_id: 10},
+  {body: "aqw", recipe_id: 10},
+  {body: "aq", recipe_id: 1},
+  {body: "aa", recipe_id: 1},
+  {body: "mm", recipe_id: 1},
+  {body: "v", recipe_id: 1},
+  {body: "ful first", recipe_id: 10},
+  {body: "new", recipe_id: 10},
+  {body: "jdjdjdkjdhkjdkjdkdjj", recipe_id: 10},
+  {body: "azzajdjdjdkjdhkjdkjdkdjj", recipe_id: 10},
+  {body: "taboliii vv commient", recipe_id: 18},
+  {body: "hbbs", recipe_id: 18},
+  {body: "maybe good maybe bad", recipe_id: 9},
+  {body: "qwertyu", recipe_id: 10}
+])
 Country.create!([
   {country_name: "kenya", kitchen_id: 2, visible: false},
   {country_name: "nigeria", kitchen_id: 2, visible: false},
@@ -20,7 +45,7 @@ Kitchen.create!([
   {kitchen_name: "latin_amarican", visible: false}
 ])
 Recipe.create!([
-  {recipe_name: "Kenyan Greens Simmered With Tomatoes", country_id: 1, calories: "231.1", recipe_content: "SERVINGS 4-6\r\ncalories 231.1\r\nTime needed :45mins\r\nINGREDIENTS\r\n•\t3tablespoons oil\r\n•\t1onions, chopped or 1 mincedonion\r\n•\t2lbs kale or 2 lbs collard greens, destemmed and finely chopped\r\n•\t2cups tomatoes, chopped\r\n•\t1cup water or 1 cup stock\r\n•\tsalt and pepper\r\n\r\nDIRECTIONS\r\n1.\tHeat the oil over med-high flame in a large, heavy-bottomed pot. Add the onion and saute until translucent. Add the greens in batches, sauteing each addition until wilted.\r\n2.\tAdd the tomatoes, water or stock, salt and pepper. Bring to a boil, then reduce heat to low and simmer gently until tender, from 20 to 30 minutes or done to your liking.\r\n3.\tAdjust seasoning and serve with a little bit of the broth.\r\n4.\tYou can add a chopped chili pepper or two with the onions. If you like, add some leftover meat for more flavor.\r\n", visible: false},
+  {recipe_name: "Kenyan Greens Simmered With Tomatoes", country_id: 1, calories: "294", recipe_content: "SERVINGS 4-6\r\ncalories 231.1\r\nTime needed :45mins\r\nINGREDIENTS\r\n•\t3tablespoons oil\r\n•\t1onions, chopped or 1 mincedonion\r\n•\t2lbs kale or 2 lbs collard greens, destemmed and finely chopped\r\n•\t2cups tomatoes, chopped\r\n•\t1cup water or 1 cup stock\r\n•\tsalt and pepper\r\n\r\nDIRECTIONS\r\n1.\tHeat the oil over med-high flame in a large, heavy-bottomed pot. Add the onion and saute until translucent. Add the greens in batches, sauteing each addition until wilted.\r\n2.\tAdd the tomatoes, water or stock, salt and pepper. Bring to a boil, then reduce heat to low and simmer gently until tender, from 20 to 30 minutes or done to your liking.\r\n3.\tAdjust seasoning and serve with a little bit of the broth.\r\n4.\tYou can add a chopped chili pepper or two with the onions. If you like, add some leftover meat for more flavor.\r\n", visible: false},
   {recipe_name: "Nyama Choma Roast Meat", country_id: 1, calories: "294", recipe_content: "SERVINGS 3-4\r\nCalories 1760\r\nTime needed :35mins\r\n\r\nINGREDIENTS\r\n•\t3lbs beef short ribs\r\n•\tsalt and pepper\r\n\r\nDIRECTIONS\r\n1.\tSeason the meat with salt and pepper.\r\n2.\tGrill on a gas or charcoal grill over medium heat 30 minutes.\r\n3.\tYou can also roast the meat in an oven at 300°F for 1¼ hours.\r\n4.\tMeat should be golden brown, tender and juicy when ready.\r\n5.\tNyama choma goes well with kachumbari or cooked greens.\r\n", visible: false},
   {recipe_name: "Ugali", country_id: 1, calories: "294", recipe_content: "﻿\r\nSERVINGS 6-8\r\nCalories 294.4\r\nTime needed :15mins\r\n\r\nINGREDIENTS\r\n\r\n1.\t4cups finely ground cornmeal (If you can find the kind that is so finely ground as to be like flour, grab it!!)\r\n2.\t8cups water\r\n\r\nDIRECTIONS\r\n\r\n1.\tHeat water to boiling in a saucepan. Slowly pour the corn flour into boiling water. Avoid forming lumps.\r\n2.\tStir continuously and mash any lumps that do form. Add more corn flour until it is thicker than mashed potatoes.\r\n3.\tCook for three or four minutes, continue to stir. (Continuing to stir as the ugali thickens is the secret to success, i.e., lump-free ugali.)\r\n4.\tTop with a pat of butter or margarine, if desired.\r\n5.\tCover and keep warm.\r\n6.\tServe immediately with any meat or vegetable stew, or any dish with a sauce or gravy.\r\n\r\n", visible: false},
   {recipe_name: "Jollof Chicken and Rice", country_id: 2, calories: "479.2", recipe_content: "SERVINGS 6\r\nCalories 479.2\r\nTime needed :2hrs\r\nINGREDIENTS\r\n\r\n•\t3lbs chicken pieces\r\n•\t2tablespoons oil\r\n•\t1medium onion, chopped\r\n•\t16ounces canned tomatoes, cut up\r\n•\t1 1⁄4cups chicken broth\r\n•\t1bay leaf\r\n•\t1⁄2teaspoon ground ginger\r\n•\t1⁄2teaspoon cinnamon\r\n•\t1⁄2teaspoon thyme, crushed\r\n•\t1⁄2teaspoon salt\r\n•\t1⁄4teaspoon ground red pepper\r\n•\t1cup long grain rice\r\n•\t1tablespoon parsley, chopped\r\n\r\n\r\nDIRECTIONS\r\n1.\tIn a large skillet brown chicken on both sides in hot oil about 15 minutes; remove from skillet. Set aside chicken, reserving drippings.\r\n2.\tAdd the onion to drippings; cook till tender but not brown. Drain off fat.\r\n3.\tReturn chicken to skillet.\r\n4.\tCombine undrained tomatoes, broth, and seasonings. Pour over chicken. DO NOT STIR.\r\n5.\tBring to boiling; reduce heat.\r\n6.\tCover; simmer for 30 minutes.\r\n7.\tSkim off fat.\r\n8.\tAdd rice, making sure all the rice is covered with liquid.\r\n9.\tCover; simmer for 30 minutes more or until rice is tender.\r\n10.\tRemove bay leaf. Sprinkle with parsley.\r\n", visible: false},
