@@ -17,10 +17,15 @@ class RecipesController < ApplicationController
   # GET /recipes/1.json
   def show
       @recipes = Recipe.search(params[:search]) 
+      @comments = @recipe.comments.all
+@comment = @recipe.comments.build
   end
 
+def get_comments
 
-
+         @commentr= Comment.where( :recipe_id  => params[:id] )
+  end
+helper_method :get_comments
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe

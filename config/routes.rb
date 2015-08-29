@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users , path_names: { sign_in: 'login', sign_up: 'register' }
 
   devise_scope :user do  
@@ -10,7 +11,9 @@ end
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  resources :recipes
+  resources :comments
+  resources :recipes do
+    resources :comments end
   resources :countries
   resources :kitchens
 root 'kitchens#index'
