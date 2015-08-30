@@ -1,7 +1,17 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
-
+def upvote
+  @recipe = Recipe.find(params[:id])
+  @recipe.upvote_by current_user
+  redirect_to recipe_path
+end
+helper_method :upvote
+def downvote
+  @recipe = Recipe.find(params[:id])
+  @recipe.downvote_by current_user
+  redirect_to recipe_path
+end
   # GET /recipes
   # GET /recipes.json
   def index

@@ -26,6 +26,7 @@
         
 
 
+  
  
 <h2>Comments</h2>
  <% get_comments.each do |comment| %>
@@ -42,3 +43,10 @@
 <% end %>
 
 <%= link_to 'Back', recipes_path %>
+
+<%= link_to "like", {:controller => 'recipes', :action => 'upvote'} %>
+  <%= @recipe.get_upvotes.size %>
+
+
+  <%= link_to "dislike", {:controller => 'recipes', :action => 'downvote'} %>
+  <%= @recipe.get_downvotes.size %>

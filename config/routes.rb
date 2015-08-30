@@ -6,6 +6,14 @@ Rails.application.routes.draw do
    get '/users/sign_out' => 'devise/sessions#destroy'     
 end
 
+# resources :recipes do
+#   member do
+#     put "llike", to: "recipes#upvote"
+#     put "disllike", to: "recipes#downvote"
+#   end 
+# end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,7 +21,10 @@ end
   # root 'welcome#index'
   resources :comments
   resources :recipes do
-    resources :comments end
+    resources :comments 
+  end
+get 'recipes/:id/upvote'  => 'recipes#upvote'
+get 'recipes/:id/downvote'  => 'recipes#downvote'
   resources :countries
   resources :kitchens
 root 'kitchens#index'
