@@ -11,7 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150829165521) do
+
+ActiveRecord::Schema.define(version: 20150829201631) do
+>>>>>>> 0512a71c5b63d4425c5fe96a426f5f343e6ab431
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -37,6 +39,13 @@ ActiveRecord::Schema.define(version: 20150829165521) do
     t.datetime "updated_at"
   end
 
+  create_table "looks", force: :cascade do |t|
+    t.string   "recipe_name",  limit: 255
+    t.string   "country_name", limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string   "recipe_name",    limit: 255
     t.integer  "country_id",     limit: 4
@@ -45,9 +54,17 @@ ActiveRecord::Schema.define(version: 20150829165521) do
     t.boolean  "visible",                      default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_filename", limit: 255
   end
 
   add_index "recipes", ["country_id"], name: "index_recipes_on_country_id", using: :btree
+
+  create_table "searches", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "country",    limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
