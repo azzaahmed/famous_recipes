@@ -145,13 +145,13 @@ Garlic and ginger are used in all three cuisine areas, as are chilipeppers, alth
     
         <ul>  
       <li>
-            <img src="/assets/1a.jpg" alt="Image" style="float:right" />
+            <img src=<%=image_path("1a.jpg")%> alt="Image" style="float:right" />
           </li>
           <li class="secound">
-            <img src="/assets/2a.jpg" alt="Image" style="float:right" />
-          </li>
+            <img src=<%=image_path("2a.jpg")%> alt="Image" style="float:right" />
+          </li> 
                    <li >
- <img src="/assets/3a.jpg" alt="Image" style="float:right" />
+ <img src= <%= image_path('3a.jpg')%> alt="Image" style="float:right">
          </li>
         
         </ul>  
@@ -160,30 +160,30 @@ Garlic and ginger are used in all three cuisine areas, as are chilipeppers, alth
       <ul>
           
       <li>
-            <img src="/assets/3f.jpg" alt="Image" style="float:right"/>
+            <img src=<%= image_path("3f.jpg")%> alt="Image" style="float:right"/>
           </li>
           <li class="secound">
-            <img src="/assets/2f.jpg" alt="Image"  style="float:right"/>
+            <img src=<%= image_path("2f.jpg")%> alt="Image"  style="float:right"/>
           </li>
         
           
           <li >
- <img src="/assets/1f.jpg" alt="Image" style="float:right " />
+ <img src=<%= image_path("1f.jpg" )%>alt="Image" style="float:right " />
          </li>
        </ul>
          <% elsif( @kitchen ===Kitchen.find(4))%>
       <ul>
           
       <li>
-            <img src="/assets/1s.jpg" alt="Image" style="float:right;" />
+            <img src=<%= image_path("1s.jpg")%> alt="Image" style="float:right;" />
           </li>
           <li class="secound">
-            <img src="/assets/2s.jpg" alt="Image"style="float:right;"/>
+            <img src=<%= image_path("2s.jpg" )%>alt="Image"style="float:right;"/>
           </li>
         
           
           <li >
- <img src="/assets/3s.jpg" alt="Image" style="float:right " />
+ <img src=<%= image_path("3s.jpg")%> alt="Image" style="float:right " />
          </li>
           </ul>
           <%end%>
