@@ -73,29 +73,123 @@
     <div class="home">
       <div class="aside">
         <h1>Welcome to our site</h1>
-        <p>paragraph1.</p> 
-        
-        <p>paragraph2. <a href="index.html" class="readmore">read more</a></p>
-      </div>
-      <div class="section">
-        <div>
           <h2>The food story</h2>
-          <p>paragraaaaph.</p>
-        </div>
-        <ul>
-          <li class="first">
-           <img src="/assets/2.jpg" alt="Image" />
+          <p>
+          <% if( @kitchen ===Kitchen.find(1))%>
+          <p>
+ Within the early Arab food tradition, what did the Arabs of the 7th century eat in the early days of Islam?
+
+Well, there is no one answer as the diverse geography of the Arabian region allowed for different kinds of cooking lifestyles.
+
+There were many tribes of Arabs, nomads and city dwellers, Arabs of the north and of the south, Arabs of the south, Arabs of Gulf and the Red Sea, and those scattered throughout the Arabian Peninsula. Each had their own food traditions. Their way of life is known to us through accounts of the life of the prophet Muhammad, born at Mecca in Hijaz.  Hijaz extends hundreds of miles along the coast of the Red Sea..
+It consists of high desert plateaus where rainfall is rare and unpredictable; however it is not all barren for city of Medina cultivated date palms and vineyards and Asir to the south, the best-irrigated region, produces wheat, apricots, peaches, bananas, grapes, pomegranate, and almonds, all part of early Arab food ...
+
+Sedentary farmers in villages and oasis grew barley and vegetables (tomato, melon, squash, beans, and root vegetables) in small garden plots and tended their date groves, adding to the diversity of Arab food. Semi-nomadic Arabs provide meant and cheese from their flock of sheep and goats. Nomadic Bedouin herders provided camel meat. Fresh fish was stable on the coasts. In addition, tea, spices and rice were imported in bulk  by camel caravans or by sea to ports, thus adding to the richness of early Arab food traditions.
+
+Because of the mass expanses of the desert, the nomadic Bedouin way of life was most pervasive, but simple and plain. The Arabs remained faithful to their way of life based on principle and necessity, but also out of love of independence. These values are reflected in the simple Arab food habits of the time... 
+
+However, they also knew about the influences of neighbouring civilizations and traveled the length and breadth of the peninsula disseminating information.  Although strongly clinging to their culture, the Arabs did adopt recipes from Sasanid courts (in Persia). This included pastries like faludhaj, a cake prepared with starch and honey...
+
+Mecca served as the spiritual center of the pre-Islamic Arabs. Mecca was also the center of the caravan trade for merchants coming from the south (Yemen) and bound for Syria and Egypt. The spices and incense would come from the far ends to sea ports of Yemen from where they would head north crossing Mecca. Its central place in this trade meant that Meccans must have also adopted the culinary spices in their diets. This meant that early Arab food included influences from many other surrounding regions.</p>
+
+
+ <% elsif( @kitchen === Kitchen.find(2))%><p>
+   The African Food History:
+
+   The authentic African food history has been described by both African and Western early writers    with immense elegance. Africans have always given serious attention to what they eat. All       African societies are replete with a long list of original and adapted cuisines that reflect       their historic interactions and cultures. 
+
+   Olaudah Equiano, a.k.a Gustavus Vassa (1745 – 31 March 1797), one of the earliest black African    writers in the United Kingdom, testified in his narrative, that the traditional African food is   "free from refinements in cookery which debauch the taste".
+   He was captured and taken to America as a slave at 11 years of age, from what now came to be       known as Nigeria, and later bought his freedom for £40.00.
+
+   Contrary to what some want the world to belief, the very balanced style of cooking seen in many     African communities today has been indigenous to Africa thousands of years even before the     slave trade, or even before the incursion of Arabian tradesmen into that continent.
+
+   The narrative of Olaudah Equiano (Gustavus Vassa the African), as well as the same preserved       manner of cooking still seen in newly found African societies testifies to this fact.
+
+   Where ever they went, Africans took along with them their cooking. Thus today, all over the       Africans still cook alike with some little variations.
+
+   Like their Asian counterparts, most cuisines of Africa are quite spicy, prepared with very hot      chillies a common trend in most hot countries.
+
+  In the West Indies, the afro-Caribbean food is thus not a great deviation from traditional     African dishes.
+
+  In North America, the African American foods are now generally referred to as soul food. Soul     food was thus new to America, but not to the Africans who brought with them the ideas, despite   been deprived of the proper ingredients with which to prepare these meals.
+
+  Thankfully, soul food is now very popular, and eaten all over black communities in America.
+
+
+
+</p>
+
+<% elsif( @kitchen === Kitchen.find(4))%><p>
+The Three Cuisine Areas of Asia
+
+The South West – India, Pakistan, Sri Lanka, Burma
+The North East – China, Korea, Japan
+The South East – Thailand, Laos, Cambodia, Vietnam, Indonesia ,Malaysia, Singapore, Brunei
+Curries are very important to the cuisines of the South East and SouthWest, less so in the cuisine of the North East. South Western curries are generally based on yogurt, whereas the curries of the South Eastand North East are generally based on coconut milk.
+
+Rice is a staple starch in all three cuisines areas. In addition to rice, South Western cuisines include a variety of leavened and unleavend breads and South East and North East cuisines include rice and eggnoodles.
+
+In the South West, the major oil used in frying is ghee, or clarified butter. In the South East and North East, the major oils are vegetable oils.
+
+Garlic and ginger are used in all three cuisine areas, as are chilipeppers, although chilies are much more common in the South Westand South East. The North Eastern cuisines use soy sauce in nearly everything; the South East substitutes fish sauce; there is no equivalent in South Western cooking. In the South East, there are two additional flavorings that are not used in the other cuisines – galangal and lemon grass.</p>
+
+
+  <%end%>
+ 
+ </p>
+
+   
+    
+      </div>
+       <% if( @kitchen ===Kitchen.find(1))%>
+    
+        <ul>  
+      <li>
+            <img src="/assets/1a.jpg" alt="Image" style="float:right" />
           </li>
-          <li>
-            <img src="/assets/burgercake.jpg" alt="Image" />
+          <li class="secound">
+            <img src="/assets/2a.jpg" alt="Image" style="float:right" />
           </li>
-          <li>
-            <img src="/assets/4.jpg" alt="Image" />
+                   <li >
+ <img src="/assets/3a.jpg" alt="Image" style="float:right" />
+         </li>
+        
+        </ul>  
+ 
+          <% elsif( @kitchen ===Kitchen.find(2))%>
+      <ul>
+          
+      <li>
+            <img src="/assets/3f.jpg" alt="Image" style="float:right"/>
           </li>
-        </ul>
+          <li class="secound">
+            <img src="/assets/2f.jpg" alt="Image"  style="float:right"/>
+          </li>
+        
+          
+          <li >
+ <img src="/assets/1f.jpg" alt="Image" style="float:right " />
+         </li>
+       </ul>
+         <% elsif( @kitchen ===Kitchen.find(4))%>
+      <ul>
+          
+      <li>
+            <img src="/assets/1s.jpg" alt="Image" style="float:right;" />
+          </li>
+          <li class="secound">
+            <img src="/assets/2s.jpg" alt="Image"style="float:right;"/>
+          </li>
+        
+          
+          <li >
+ <img src="/assets/3s.jpg" alt="Image" style="float:right " />
+         </li>
+          </ul>
+          <%end%>
       </div>
     </div>
-  </div>
+  
   <div id="footer">
     <div class="home">
       <div>

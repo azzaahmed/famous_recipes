@@ -44,47 +44,50 @@
   
 </div>
 
-  <p>
+ <!--  <div >
 <img src="/assets/<%= @recipe.image_file_name {:thumb} %>" alt="Logo" style="float:center;,width:300px;,border:10;"/>
 
-</p>
+</div> -->
 
-<p>
- <strong>Recipe name:</strong>
+<div style=" text-align:center; margin-top:30px ; background-color:#cbfdcb; border-radius:40%; width:auto ; height:70px">
+ <p style="padding-top:25px; font-size:30px" >
   <%= @recipe.recipe_name %>
 </p>
+</div>
 
-<p>
+<!-- <p>
   <strong>Country name:</strong>
   <% country = Country.find(  @recipe.country_id) %>
 
   <%= country.country_name %>
 </p>
 
+ -->
 
-
- 
-<p>
-  <strong>content:</strong>
+ <div style="background-color:#cbfdcb; text-align:center;  border-radius:10% ; height:auto; margin-top:90px ">
+<p style="padding-top:25px">
   <%= simple_format(@recipe.recipe_content) %>
-
 </p>
-<p>
+</div>
+<!-- <p>
   <strong>calories:</strong>
   <%= @recipe.calories %>
 
-</p>
+</p> -->
         
 
 
    
 <h2>Comments</h2>
+<div >
+  <p style="padding:5px">
  <% get_comments.each do |comment| %>
 
         <%= link_to comment.body, comment %> 
       </br>
        <% end %>
-
+     </p>
+</div>
 <%= form_for [@recipe, Comment.new], remote: true do |f| %>
   <p><%= f.label :body, "New Comment" %><br/>
      <%= f.text_area :body %> 

@@ -1,5 +1,49 @@
-<h1>Listing countries</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Famous recipe</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css" />
+  <![endif]-->
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css" />
+  <![endif]-->
+</head>
+<body>
+<div id="header">
+     <div style="float:right, margin-top:-50px">
+          <ul class="right" style="float:right; margin-top:-50px">
+             <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
+  <%if signed_in?%>
+    <li><%=link_to current_user.email, edit_user_registration_path%></li>
+    <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
+  <%else%>
+    <li><%=link_to "Register", new_user_registration_path%></li>
+    <li><%=link_to "Login", new_user_session_path%></li>
+  <%end%>
+</ul>
+          <%= form_tag recipes_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search" %>
+    
+ <% end %>
+        </div>
+    <div>
 
+      <div>
+        <div id="logo">
+          <!-- <img src="/assets/a4.png" alt="Logo"/> -->
+        </div>
+      </div>
+
+     </div>
+      
+ 
+  </div>
+<h1 style="text-align:center">Listing countries</h1>
 <table>
   <thead>
     <tr>
