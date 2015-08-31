@@ -1,26 +1,69 @@
 <p id="notice"><%= notice %></p>
+<head>
+  <meta charset="UTF-8" />
+  <title>Famous recipe</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css" />
+  <![endif]-->
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css" />
+  <![endif]-->
+</head>
+<body>
+<div id="header">
+     <div style="float:right, margin-top:-50px">
+          <ul class="right" style="float:right; margin-top:-50px">
+             <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
+  <%if signed_in?%>
+    <li><%=link_to current_user.email, edit_user_registration_path%></li>
+    <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
+  <%else%>
+    <li><%=link_to "Register", new_user_registration_path%></li>
+    <li><%=link_to "Login", new_user_session_path%></li>
+  <%end%>
+</ul>
+          <%= form_tag recipes_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search" %>
+    
+ <% end %>
+        </div>
+    <div>
+
+      <div>
+        <div id="logo">
+          <!-- <img src="/assets/a4.png" alt="Logo"/> -->
+        </div>
+      </div>
+
+     </div>
+  
+</div>
+
+  <p>
+<img src="/assets/<%= @recipe.image_file_name {:thumb} %>" alt="Logo" style="float:center;,width:300px;,border:10;"/>
+
+</p>
 
 <p>
-  <strong>country-id:</strong>
-  <%= @recipe.country_id %>
+ <strong>Recipe name:</strong>
+  <%= @recipe.recipe_name %>
 </p>
-</p>
-  <strong>country_name:</strong>
+
+<p>
+  <strong>Country name:</strong>
   <% country = Country.find(  @recipe.country_id) %>
 
   <%= country.country_name %>
 </p>
-</p>
 
-  <strong>recipe_name:</strong>
-  <%= @recipe.recipe_name %>
-</p>
-<p>
-  <strong>image:</strong>
-  
-<img src="/assets/<%= @recipe.image_file_name {:thumb} %>" alt="Logo"/>
 
-</p>
+
+ 
 <p>
   <strong>content:</strong>
   <%= simple_format(@recipe.recipe_content) %>
@@ -52,13 +95,21 @@
 
 <%= render_shareable :buttons=> ['twitter'] %>
 
+<p>
+
 <% a="base_url + original_fullpath" %>
 <a href="http://www.facebook.com/sharer.php?u=(a)" ><img src="/assets/Facebook.svg.png"/> </a>
 
-<%= link_to 'Back',country %>
+</p>
 
+<p>
 <%= link_to "like", {:controller => 'recipes', :action => 'upvote'} %>
   <%= @recipe.get_upvotes.size %>
 
  <%= link_to "dislike", {:controller => 'recipes', :action => 'downvote'} %>
   <%= @recipe.get_downvotes.size %>
+
+</p>
+
+<%= link_to 'Back',country %>
+
