@@ -24,7 +24,7 @@ p a {
 }
 
 #header {
-	background-image: #f5f5f5  image-url("logo1.jpg") repeat-x center top;
+	background: #f5f5f5  url("logo1.jpg") repeat-x center top;
 	margin-top: 65px;
 }
 
@@ -96,7 +96,7 @@ p a {
 
 #header div  form input#search {
 	
-	background-image: image-url("input-search.gif") no-repeat 0 0;
+	background:url("input-search.gif") no-repeat 0 0;
 	border: 1px blue;
 	height: 20px;
 	padding: 0.5px;
@@ -105,7 +105,7 @@ p a {
 }
 
 #header div   form input#searchbtn {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -291px;
+	background: url("sprite-buttons.gif") no-repeat 0 -291px;
 	border: none;
 	height: 40px;
 	width: 60px;
@@ -140,7 +140,7 @@ p a {
 
 #header div ul li a {
 
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -205px;
+background-color:#ededed;
 	color: #5b5c5e;
 	display: block;
 	font-size: 14px;
@@ -168,7 +168,7 @@ p a {
 }
 
 #header div ul li.current a {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -97px;
+	background: url("sprite-buttons.gif") no-repeat 0 -97px;
 }
 
 #header div div#section, #header div div.section {
@@ -199,7 +199,7 @@ p a {
 }
 
 #header div div#section ul li a {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -157px;
+	background:url("sprite-buttons.gif") no-repeat 0 -157px;
 	color: #f5ffff;
 	display: block;
 	height: 38px;
@@ -218,7 +218,7 @@ p a {
 }
 
 #header div div#section ul li.selected a {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 0;
+	background: url("sprite-buttons.gif") no-repeat 0 0;
 }
 
 #header div div#section img {
@@ -257,7 +257,7 @@ p a {
 }
 
 #content div#services div.aside span {
-	background-image:image-url("sprite-icons.gif") no-repeat 0 0;
+	background:url("sprite-icons.gif") no-repeat 0 0;
 	color: #84284D;
 	font-size: 18px;
 	height: 20px;
@@ -283,7 +283,7 @@ p a {
 #content div#about div.section div#visitshop,
 #content div#services div.section div#visitshop,
 #content div div#visitshop {
-	background-image: image-url("bg-sweets.gif") no-repeat center top;
+	background:url("bg-sweets.gif") no-repeat center top;
 	height: 210px;
     padding: 0;
 	position: relative;
@@ -304,7 +304,7 @@ p a {
 #content div#about div.section div#visitshop div,
 #content div#services div.section div#visitshop div,
 #content div div#visitshop div {
-	background-image: image-url("pie.jpg") no-repeat 205px bottom;
+	background: url("pie.jpg") no-repeat 205px bottom;
 	height: 205px;
     margin: 0;
 	padding: 0;
@@ -350,7 +350,7 @@ p a {
 #content div#about div.section div#visitshop div a.visit,
 #content div div.section div#visitshop div a.visit,
 #content div div#visitshop div a.visit {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -491px;
+	background: url("sprite-buttons.gif") no-repeat 0 -491px;
 	color: #6E4253;
     display: block;
     font-size: 18px;
@@ -396,7 +396,7 @@ p a {
 }
 
 #content div#about div.section div a.callus {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -232px;
+	background:url("sprite-icons.gif") no-repeat 0 -232px;
 	color: #c04973;
 	display: block;
 	font-size: 18px;
@@ -490,7 +490,7 @@ p a {
 }
 
 #content div ul li div div a.view {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -451px;
+	background: url("sprite-buttons.gif") no-repeat 0 -451px;
 	color: #84284d;
 	display: block;
 	height: 30px;
@@ -604,7 +604,7 @@ p a {
 }
 
 #content div form input.textcontact {
-	background-image: image-url("input-contact.gif") no-repeat 0 0;
+	background:url("input-contact.gif") no-repeat 0 0;
 	border: 0 none;
 	font-weight: bold;
     height: 30px;
@@ -652,7 +652,7 @@ p a {
 }
 
 #content div#blog div#articles ul li {
-	background: url(../assets/bg-post.gif) repeat-y;
+	background: url("bg-post.gif") repeat-y;
 	display: block;
 	height: auto;
 	position: relative;
@@ -661,12 +661,12 @@ p a {
 }
 
 #content div#blog div#articles ul li div {
-	background-image: image-url("bg-post-header.gif") no-repeat center top;
+	background: url("bg-post-header.gif") no-repeat center top;
 	position: static;
 }
 
 #content div#blog div#articles ul li div div {
-	background-image: image-url("bg-post-footer.gif") no-repeat center bottom;
+	background: url("bg-post-footer.gif") no-repeat center bottom;
 }
 
 #content div#blog div#articles ul li div div h1 {
@@ -728,7 +728,7 @@ p a {
 }
 
 #content div#blog div#articles div.section {
-	background-image: image-url("border-horizontal.gif") no-repeat 40px top;
+	background: url("border-horizontal.gif") no-repeat 40px top;
 	float: none;
     overflow: hidden;
     padding-left: 35px;
@@ -756,15 +756,15 @@ p a {
 }
 
 #content div#blog div#articles ul li div div span.connect a.twitter {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -362px;
+	background: url("sprite-icons.gif") no-repeat 0 -362px;
 }
 
 #content div#blog div#articles ul li div div span.connect a.heart {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -171px;
+	background: url("sprite-icons.gif") no-repeat 0 -171px;
 }
 
 #content div#blog div#articles ul li div div span.connect a.facebook {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -112px;
+	background:url("sprite-icons.gif") no-repeat 0 -112px;
 }
 
 #content div#blog div#articles ul li div div span#tag {
@@ -789,7 +789,7 @@ p a {
 }
 
 #content div#blog div#sidebar h2 {
-	background-image: image-url("sidebar-separator.gif") no-repeat center bottom;
+	background: url("sidebar-separator.gif") no-repeat center bottom;
 	font-size: 18px;
 	font-weight: normal;
 	margin: 20px 0 0;
@@ -797,7 +797,7 @@ p a {
 }
 
 #content div#blog div#sidebar h3 {
-	background-image: image-url("sidebar-separator.gif") no-repeat center bottom;
+	background: url("sidebar-separator.gif") no-repeat center bottom;
 	font-size: 18px;
 	font-weight: normal;
     margin: 0;
@@ -815,7 +815,7 @@ p a {
 }
 
 #content div#blog div#sidebar h3 a {
-	background-image: image-url("arrow-down.gif") no-repeat 175px 5px;
+	background:url("arrow-down.gif") no-repeat 175px 5px;
 	display: block;
 	color: #ff2279;
 	text-decoration: none;
@@ -826,7 +826,7 @@ p a {
 }
 
 #content div#blog div#sidebar h3.first a {
-	background-image: image-url("arrow-up.gif") no-repeat 175px 5px;
+	background: url("arrow-up.gif") no-repeat 175px 5px;
 }
 
 #content div#blog div#sidebar div p a {
@@ -839,14 +839,14 @@ p a {
 }
 
 #content div#blog div#sidebar div {
-	background-image: image-url("sidebar-separator.gif") no-repeat center bottom;
+	background: url("sidebar-separator.gif") no-repeat center bottom;
 	padding-right: 0;
 	padding-bottom: 15px;
 	width: auto;
 }
 
 #content div div#account {
-	background-image: image-url("bg-form-top-curve.gif") no-repeat center top;	
+	background: url("bg-form-top-curve.gif") no-repeat center top;	
 	color: #5F5D5E;
 	margin: 60px auto 0;
 	padding: 10px 0 0 ;
@@ -855,13 +855,13 @@ p a {
 
 #content div div#account div {
 	
-	background-image: image-url("bg-form-bottom-curve.gif") no-repeat center bottom;
+	background:url("bg-form-bottom-curve.gif") no-repeat center bottom;
 	padding: 0 0 10px;
 	width: auto;
 }
 
 #content div div#account div form {
-	background-image: image-url("bg-form.gif") repeat-y;
+	background: url("bg-form.gif") repeat-y;
 	margin: 0;
 	padding-bottom: 15px;
 }
@@ -911,7 +911,7 @@ p a {
 }
 
 #content div div#account div form input.submitbtn {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -376px;
+	background:url("sprite-buttons.gif") no-repeat 0 -376px;
 	color: #84284D;
 	border: 0;
 	height: 25px;
@@ -928,7 +928,7 @@ p a {
 }
 
 #footer div.home {
-	background-image: image-url("bg-footer.gif") repeat-x top left;
+	background: url("bg-footer.gif") repeat-x top left;
 	height: 200px;
     padding: 0;
     width: auto;
@@ -994,15 +994,15 @@ p a {
 
 #footer div.home div div.aside div.connect ul li a.facebook,
 #footer div.section div div.connect ul li a.facebook {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -30px;
+	background: url("sprite-icons.gif") no-repeat 0 -30px;
 }
 
 #footer div.home div div.aside div.connect ul li a.twitter{
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -335px;
+	background:url("sprite-icons.gif") no-repeat 0 -335px;
 }
 
 #footer div.section div div.connect ul li a.twitter {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -416px;
+	background: url("sprite-icons.gif") no-repeat 0 -416px;
 }
 
 #footer div.home div div.aside div.connect ul li a.subscribe {
@@ -1010,15 +1010,15 @@ p a {
 }
 
 #footer div.section div div.connect ul li a.subscribe {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -389px;
+	background: url("sprite-icons.gif") no-repeat 0 -389px;
 }
 
 #footer div.home div div.aside div.connect ul li a.flicker {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -57px;
+	background: url("sprite-icons.gif") no-repeat 0 -57px;
 }
 
 #footer div.section div div.connect ul li a.flicker {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -56px;
+	background: url("sprite-icons.gif") no-repeat 0 -56px;
 }
 
 #footer div.home div div.aside div.signup, 
@@ -1040,7 +1040,7 @@ p a {
 
 #footer div.home div div.aside div.signup  div a,
 #footer div.section div div.aside div div a {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -331px;
+	background: url("sprite-buttons.gif") no-repeat 0 -331px;
 	color: #84284D;
 	display: block;
 	height: 35px;
@@ -1068,7 +1068,7 @@ p a {
 }
 
 #footer div.home div div.section {
-	background-image: image-url("bg-featured-bottom-curve.jpg") no-repeat center bottom;
+	background: url("bg-featured-bottom-curve.jpg") no-repeat center bottom;
 	float: right;
 	height: 283px;
 	margin-top: 19px;
@@ -1083,12 +1083,12 @@ p a {
 }
 
 #footer div.home div div.section div {
-	background-image: image-url("bg-featured.jpg") repeat-y;
+	background: url("bg-featured.jpg") repeat-y;
 	width: auto;
 }
 
 #footer div.home div div.section div div {
-	background-image: image-url("bg-featured-heading.gif") no-repeat center top;
+	background: url("bg-featured-heading.gif") no-repeat center top;
 	padding: 75px 20px 0;
 	width: 431px;
 }
@@ -1155,7 +1155,7 @@ p a {
 }
 
 #footer div#featured ul li p a.readmore {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -265px;
+	background: url("sprite-buttons.gif") no-repeat 0 -265px;
 	color: #d4a7bb;
 	display: inline-block;
 	height: 16px;
@@ -1179,7 +1179,7 @@ p a {
 }
 
 #footer div#navigation div ul {
-	background-image: image-url("footer-top-border.jpg") no-repeat top center;
+	background: url("footer-top-border.jpg") no-repeat top center;
 	list-style: none;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1220,7 +1220,7 @@ p a {
 }
 
 #footer div.section {
-	background-image: image-url("bg-footer2.gif") repeat-x top left;
+	background: url("bg-footer2.gif") repeat-x top left;
 	height: 226px;
     padding: 0;
     width: auto;
