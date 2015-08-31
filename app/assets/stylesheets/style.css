@@ -1,4 +1,5 @@
 /* Website template by freewebsitetemplates.com */
+
 body {
 	background: white;
 	color: #78394e;
@@ -24,7 +25,7 @@ p a {
 
 #header {
 	background: #f5f5f5 url(../assets/logo1.jpg) repeat-x center top;
-	margin-top: 70px;
+	margin-top: 65px;
 }
 
 #header div {
