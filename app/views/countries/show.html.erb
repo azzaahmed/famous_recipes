@@ -96,7 +96,7 @@
   <div id="content">
     <div>
     </br>
-      <h1  style="text-align:center"><strong style="font-size:70px" > <%= @country.country_name %> Recipes</strong></h1>
+      <h2  style="text-align:center"><strong style="font-size:50px" > <%= @country.country_name %> Recipes</strong></h1>
     </br>
       <ul>
  <% @recipess.each do |recipe| %>
@@ -109,11 +109,15 @@
             </div>
           <div>
             
-      
+       <%= link_to 'Show', recipe %>
+     </br>
+     </br>
 <img src="/assets/<%= recipe.image_file_name {:thumb} %>" alt="Logo"/>
 </br>
-  <%= link_to 'Show', recipe %>
+
+  
           </div>
+
         </li>
        <% end %>
       </ul>
