@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Title:</strong>
@@ -9,7 +9,7 @@
   <strong>id:</strong>
   <%= @kitchen.id %>
 </p>
-
+ -->
 
 
 <head>
@@ -28,15 +28,9 @@
 </head>
 <body >
 
-
-  <div id="header">
-    <div>
-      <div>
-        <div id="logo">
-      <img src="assets/food.jpg" alt="Logo"/>
-        </div>
-        <div>
-          <ul class="right">
+<div id="header">
+     <div style="float:right, margin-top:-50px">
+          <ul class="right" style="float:right; margin-top:-50px">
   <%if signed_in?%>
     <li><%=link_to current_user.email, edit_user_registration_path%></li>
     <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
@@ -51,12 +45,22 @@
     
  <% end %>
         </div>
+    <div>
+
+      <div>
+        <div id="logo">
+        <!--   <img src="/assets/a4.png" alt="Logo"/> -->
+        </div>
+    
       </div>
+
+      
       <ul>
-        <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
+         <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
        
-  	<% get_countries.each do |country| %>
+    <% get_countries.each do |country| %>
         <li> <%= link_to country.country_name, country %> </li>
+     
     <% end %>
    </ul>
      </div>
@@ -78,13 +82,13 @@
         </div>
         <ul>
           <li class="first">
-           <img src="assets/2.jpg" alt="Image" />
+           <img src="/assets/2.jpg" alt="Image" />
           </li>
           <li>
-            <img src="assets/burgercake.jpg" alt="Image" />
+            <img src="/assets/burgercake.jpg" alt="Image" />
           </li>
           <li>
-            <img src="assets/4.jpg" alt="Image" />
+            <img src="/assets/4.jpg" alt="Image" />
           </li>
         </ul>
       </div>

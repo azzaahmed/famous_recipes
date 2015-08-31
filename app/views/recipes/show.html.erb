@@ -7,9 +7,11 @@
 </p>
   <strong>country_name:</strong>
   <% country = Country.find(  @recipe.country_id) %>
+
   <%= country.country_name %>
 </p>
 </p>
+
   <strong>recipe_name:</strong>
   <%= @recipe.recipe_name %>
 </p>
@@ -32,8 +34,7 @@
         
 
 
-  
- 
+   
 <h2>Comments</h2>
  <% get_comments.each do |comment| %>
 
@@ -51,13 +52,13 @@
 
 <%= render_shareable :buttons=> ['twitter'] %>
 
+<% a="base_url + original_fullpath" %>
+<a href="http://www.facebook.com/sharer.php?u=(a)" ><img src="/assets/Facebook.svg.png"/> </a>
 
-
-<%= link_to 'Back', recipes_path %>
+<%= link_to 'Back',country %>
 
 <%= link_to "like", {:controller => 'recipes', :action => 'upvote'} %>
   <%= @recipe.get_upvotes.size %>
 
-
-  <%= link_to "dislike", {:controller => 'recipes', :action => 'downvote'} %>
+ <%= link_to "dislike", {:controller => 'recipes', :action => 'downvote'} %>
   <%= @recipe.get_downvotes.size %>

@@ -64,20 +64,15 @@
 </head>
 <body>
 <div id="header">
-    <div>
-      <div>
-        <div id="logo">
-      <img src="assets/food.jpg" alt="Logo"/>
-        </div>
-        <div>
-          <ul class="right">
+     <div style="float:right, margin-top:-50px">
+          <ul class="right" style="float:right; margin-top:-50px">
+             <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
   <%if signed_in?%>
     <li><%=link_to current_user.email, edit_user_registration_path%></li>
     <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
   <%else%>
     <li><%=link_to "Register", new_user_registration_path%></li>
     <li><%=link_to "Login", new_user_session_path%></li>
-   <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
   <%end%>
 </ul>
           <%= form_tag recipes_path, :method => 'get' do %>
@@ -86,25 +81,38 @@
     
  <% end %>
         </div>
+    <div>
+
+      <div>
+        <div id="logo">
+          <!-- <img src="/assets/a4.png" alt="Logo"/> -->
+        </div>
       </div>
- 
-   </div>   
+
+     </div>
+      
  
   </div>
   <div id="content">
     <div>
-      <h1>Recipes</h1>
+    </br>
+      <h1  style="text-align:center"><strong style="font-size:70px" > <%= @country.country_name %> Recipes</strong></h1>
+    </br>
       <ul>
  <% @recipess.each do |recipe| %>
+</br>
+</br>
         <li>
           <div>
-            <div>
-              <h2> <%= recipe.recipe_name %></h2>
-             
-               <%= link_to 'Show', recipe %>
+              <h2> <%= recipe.recipe_name %></h2>  
        
             </div>
-            <a href="index.html"><img src="images/special-treats.jpg" alt="Image" /></a>
+          <div>
+            
+      
+<img src="/assets/<%= recipe.image_file_name {:thumb} %>" alt="Logo"/>
+</br>
+  <%= link_to 'Show', recipe %>
           </div>
         </li>
        <% end %>

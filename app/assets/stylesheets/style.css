@@ -1,5 +1,4 @@
 /* Website template by freewebsitetemplates.com */
-
 body {
 	background: white;
 	color: #78394e;
@@ -24,7 +23,8 @@ p a {
 }
 
 #header {
-	background: #f5f5f5 url(../assets/bg-body.gif) repeat-x center top;
+	background: #f5f5f5 url(../assets/logo1.jpg) repeat-x center top;
+	margin-top: 70px;
 }
 
 #header div {
@@ -41,6 +41,7 @@ p a {
 #header div div div#logo {
 	float: left;
 	width: 331px;
+	margin-top: -10px;
 }
 
 #header div div div {
@@ -76,31 +77,35 @@ p a {
 	padding-right: 0;
 }
 
-#header div div div form {
+#header div div  form {
 	position: absolute;
 	right: 0;
-	top: 70px;
-	height: 30px;
+	
+	height: 40px;
 	width: 290px;
 }
 
-#header div div div form input {
-	float: left;
+#header div   form input {
+	float: right;
 	line-height: 30px;
+	margin-top: -60px;
+	margin-right: 20px;
+
 }
 
-#header div div div form input#search {
+#header div  form input#search {
 	background: url(../assets/input-search.gif) no-repeat 0 0;
-	border: 0;
-	height: 30px;
-	padding: 0 5px;
+	border: 1px blue;
+	height: 20px;
+	padding: 0.5px;
 	width: 220px;
+	margin-right: 80px;
 }
 
-#header div div div form input#searchbtn {
+#header div   form input#searchbtn {
 	background: url(../assets/sprite-buttons.gif) no-repeat 0 -291px;
 	border: none;
-	height: 30px;
+	height: 40px;
 	width: 60px;
 }
 
@@ -110,15 +115,29 @@ p a {
 	/*overflow: hidden;*/
 	padding: 0;
 }
-
 #header div ul li {
+	margin-top:10px;
 	float: left;
 	height: 50px;
 	line-height: 50px;
 	width: 160px;
+
 }
 
+#header div ul.right li {
+	
+	height: 25px;
+	line-height: 25px;
+	width: 100px;
+	margin-top: 20px;
+	margin-right: 20px;
+
+
+}
+
+
 #header div ul li a {
+
 	background: url(../assets/sprite-buttons.gif) no-repeat 0 -205px;
 	color: #5b5c5e;
 	display: block;
@@ -127,6 +146,18 @@ p a {
 	text-decoration: none;
 	text-shadow: 1px 1px 0 #e8edf1;
 	text-transform: capitalize;
+}
+#header div ul.right li a {
+
+	background:white;
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+
 }
 
 #header div ul li a:hover, #header ul li.current a {
@@ -193,7 +224,7 @@ p a {
 }
 
 #content {
-	background: #f5f5f5;
+	background: white;
 	height: auto;
 	width: 100%;
 }

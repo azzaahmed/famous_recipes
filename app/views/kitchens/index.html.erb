@@ -17,14 +17,8 @@
 
 
   <div id="header">
-    <div>
-      <div>
-        <div id="logo">
-          <img src="assets/food.jpg" alt="Logo"/>
-        </div>
-
-<div>
-          <ul class="right">
+     <div style="float:right, margin-top:-50px">
+          <ul class="right" style="float:right; margin-top:-50px">
   <%if signed_in?%>
     <li><%=link_to current_user.email, edit_user_registration_path%></li>
     <li><%=link_to "signout", destroy_user_session_path, method: :delete%></li>
@@ -39,14 +33,16 @@
     
  <% end %>
         </div>
+    <div>
 
-
-
-
-
-
+      <div>
+        <div id="logo">
+         <!--  <img src="/assets/a4.png" alt="Logo"/> -->
+        </div>
     
       </div>
+
+
       <ul>
         <li> <%= link_to "Home", {:controller => 'kitchens', :action => 'index'} %> </li>
         
