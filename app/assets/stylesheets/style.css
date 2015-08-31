@@ -140,8 +140,7 @@ p a {
 
 #header div ul li a {
 
-background-color:#ededed;
-	color: #5b5c5e;
+background: url("sprite-buttons.gif") no-repeat 0 -205px	color: #5b5c5e;
 	display: block;
 	font-size: 14px;
 	text-align: center;
