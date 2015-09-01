@@ -42,7 +42,7 @@ p a {
 
 #header div div div#logo {
 	float: left;
-	width: auto;
+	/*width: auto;*/
 	margin-top: -10px;
 }
 
