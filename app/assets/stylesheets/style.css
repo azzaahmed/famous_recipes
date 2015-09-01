@@ -25,7 +25,7 @@ p a {
 }
 
 #header {
-	background: #f5f5f5 url("logo1.jpg") repeat-x center top;
+	/*background: #f5f5f5 url("logo1.jpg") repeat-x center top;*/
 	margin-top: 65px;
 }
 
@@ -42,7 +42,7 @@ p a {
 
 #header div div div#logo {
 	float: left;
-	width: 331px;
+	width: auto;
 	margin-top: -10px;
 }
 
