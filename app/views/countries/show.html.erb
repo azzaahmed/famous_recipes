@@ -115,8 +115,9 @@
        <%= link_to 'Show', recipe %>
      </br>
      </br> 
-
-   <%=image_tag recipe.image_name%>
+<% if recipe.image_name %>
+  <%= link_to (image_tag recipe.image_name),recipe%>
+  <%end%>
 
 </br>
           </div>
