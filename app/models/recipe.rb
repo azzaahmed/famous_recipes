@@ -1,6 +1,6 @@
 class Recipe < ActiveRecord::Base
 	acts_as_votable
-#attr_accessible :image_name
+
 
 	belongs_to :country
 	has_many :comments

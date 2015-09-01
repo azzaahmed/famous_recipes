@@ -56,6 +56,6 @@ helper_method :get_comments
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:recipe_name, :recipe_id, :country_id, :recipe_content)
+      params.require(:recipe).permit(:recipe_name, :recipe_id, :country_id, :recipe_content,:image_name)
     end
 end
