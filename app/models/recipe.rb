@@ -1,9 +1,6 @@
 class Recipe < ActiveRecord::Base
 	acts_as_votable
-
-	has_attached_file :image ,style: {medium: "300x300>", thumb: "100x100>"}
-   
-   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+#attr_accessible :image_name
 
 	belongs_to :country
 	has_many :comments

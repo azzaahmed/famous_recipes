@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150830224850) do
+ActiveRecord::Schema.define(version: 20150901165748) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20150830224850) do
     t.integer  "image_file_size",    limit: 4
     t.datetime "image_updated_at"
     t.string   "image_filename",     limit: 255
+    t.string   "image_name",         limit: 255
   end
 
   add_index "recipes", ["country_id"], name: "index_recipes_on_country_id", using: :btree
