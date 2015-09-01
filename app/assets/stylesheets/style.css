@@ -621,7 +621,7 @@ background: url("sprite-buttons.gif") no-repeat 0 -205px	color: #5b5c5e;
 }
 
 #content div form input.submit {
-	background-image: image-url("sprite-buttons.gif") no-repeat 0 -411px;
+	background: url("sprite-buttons.gif") no-repeat 0 -411px;
 	border: 0;
 	display: block;
 	margin-left: 780px;
@@ -1005,7 +1005,7 @@ background: url("sprite-buttons.gif") no-repeat 0 -205px	color: #5b5c5e;
 }
 
 #footer div.home div div.aside div.connect ul li a.subscribe {
-	background-image: image-url("sprite-icons.gif") no-repeat 0 -202px;
+	background: url("sprite-icons.gif") no-repeat 0 -202px;
 }
 
 #footer div.section div div.connect ul li a.subscribe {
