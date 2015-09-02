@@ -54,8 +54,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'psych', '~> 2.0.14'
 gem 'seed_dump', '~> 3.2.2'
 gem 'acts_as_votable', '~> 0.10.0'
-<<<<<<< HEAD
-gem 'heroku', '~> 3.41.3'
-=======
-gem 'heroku', '~> 3.41.3'
->>>>>>> ade3c47d9ce1bbfbbd14255f879b874c38d2a884
