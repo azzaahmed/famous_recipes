@@ -51,7 +51,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Famous recipe</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+   
+
   <!--[if IE 8]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css" />
   <![endif]-->
@@ -85,8 +87,8 @@
 
       <div>
      <div id="logo" style="width:auto">
-           <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
-              <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
+       <!--     <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
+              <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/> -->
 
          </div>
 
@@ -103,24 +105,25 @@
     </br>
       <ul>
  <% @recipess.each do |recipe| %>
-</br>
-</br>
-        <li>
-          <div>
+
+        <li style="margin-bottom:20px">
+
+          <div >
               <h2> <%= recipe.recipe_name %></h2>  
-       
+         
+        <%= link_to 'Show', recipe %>
+      </br>
+           <%= link_to (image_tag recipe.image_name),recipe%>
             </div>
-          <div>
+   <!--        <div >
             
-       <%= link_to 'Show', recipe %>
-     </br>
      </br> 
-<% if recipe.image_name %>
-  <%= link_to (image_tag recipe.image_name),recipe%>
+ <% if recipe.image_name %> 
+  
   <%end%>
 
-</br>
-          </div>
+
+          </div> -->
 
         </li>
        <% end %>

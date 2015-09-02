@@ -2,7 +2,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Famous recipe</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  
+
   <!--[if IE 8]>
     <link rel="stylesheet" type="text/css" href="css/ie8.css" />
   <![endif]-->
@@ -36,8 +38,8 @@
 
       <div>
        <div id="logo" style="width:auto">
-           <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
-              <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
+         <!--   <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/>
+              <img src=<%=image_path("logo1.jpg")%>  alt="Logo"/> -->
 
          </div>
 
@@ -101,12 +103,12 @@
 
 <%= render_shareable :buttons=> ['twitter'] %>
 
-<p>
-
+<!-- <p>
 <% a="base_url + original_fullpath" %>
 <a href="http://www.facebook.com/sharer.php?u=(a)" ><img src="/assets/Facebook.svg.png"/> </a>
+</p> -->
 
-</p>
+<%= link_to image_tag("Facebook.svg.png"), {:controller => 'recipes', :action => 'face', :id => @recipe.id} %>
 
 <p>
 <%= link_to "like", {:controller => 'recipes', :action => 'upvote'} %>

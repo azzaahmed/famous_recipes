@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
-before_action :authenticate_user! ,  only: [:upvote, :downvote]
+before_action :authenticate_user! ,  only: [:upvote, :downvote, :face]
 def upvote
   @recipe = Recipe.find(params[:id])
   @recipe.upvote_by current_user
@@ -12,6 +12,15 @@ def downvote
   @recipe.downvote_by current_user
   redirect_to recipe_path
 end
+helper_method :downvote
+
+def face
+a="base_url + original_fullpath"
+  redirect_to 'http://www.facebook.com/sharer.php?u=(a)'
+  
+end
+
+
   # GET /recipes
   # GET /recipes.json
   def index
